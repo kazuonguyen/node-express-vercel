@@ -3,6 +3,7 @@ const router = express.Router();
 const mongodb = require("mongodb")
 var MongoClient = require('mongodb').MongoClient;
 const  ObjectID = require('mongodb').ObjectID;
+var url = "mongodb+srv://kazuo:22445588@cluster0.7kibo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 router.get("/", async (req, res, next) => {
   return res.status(200).json({
