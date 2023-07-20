@@ -20,6 +20,6 @@ app.use(express.json())
   });
   app.use("/home", home);
 
- app.listen(port, host,function () {
+ app.listen(port,function () {
   console.log('CORS-enabled web server listening on port',port);
 })
